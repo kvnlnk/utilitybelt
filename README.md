@@ -191,7 +191,6 @@ The app is fully static — no server needed. All tools run client-side.
 - **Pure functions.** Tool logic is separated from UI in `src/lib/tools/`.
 - **Mobile-first.** Responsive from 375px to 4K.
 - **Tested.** Every tool function has unit tests; bugs caught before deploy.
-- **No secrets.** All `.env` files are gitignored. Zero server-side secrets.
 
 ## License
 
