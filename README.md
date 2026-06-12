@@ -159,7 +159,7 @@ npm test             # Run all tests (single run)
 npm run test:watch   # Watch mode for development
 ```
 
-- **178 tests** across 11 suites
+- **265 tests** across 12 suites
 - **Unit tests** for all tool functions (pure function → Result<T> pattern)
 - **Component tests** for Footer and ToolLayout
 - **Vitest** + **@testing-library/react** + **jsdom**
