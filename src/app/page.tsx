@@ -25,6 +25,7 @@ import {
   Eye,
   ScrollText,
   Database,
+  Sparkles,
 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { SearchBar } from "@/components/search-bar";
@@ -107,6 +108,15 @@ const categories: ToolCategory[] = [
     tools: [
       { name: "Log Viewer", href: "/tools/log-viewer", description: "Parse, filter & inspect JSON log entries", icon: ScrollText },
       { name: "CRUD Generator", href: "/tools/crud-generator", description: "Generate SQL CRUD from table definitions", icon: Database },
+    ],
+  },
+  {
+    name: "AI",
+    icon: Sparkles,
+    tools: [
+      { name: "AI Settings", href: "/tools/ai-settings", description: "Configure AI API key for AI-powered tools", icon: Sparkles },
+      { name: "SQL Generator", href: "/tools/ai-sql-generator", description: "Describe queries in English, get SQL", icon: Database },
+      { name: "Regex Builder", href: "/tools/ai-regex-builder", description: "Describe patterns in English, get regex", icon: Beaker },
     ],
   },
 ];
