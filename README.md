@@ -4,6 +4,12 @@ A collection of **38 developer tools** for formatting, encoding, converting, deb
 
 **Live:** https://devtools-hub-gules.vercel.app
 
+## 🤖 Fully Vibecoded with Hermes Agent
+
+This project was built entirely through natural language conversations with [Hermes Agent](https://hermes-agent.nousresearch.com) — an autonomous AI coding assistant. From architecture to deployment, every line of code was generated, tested, and deployed via voice and chat prompts.
+
+---
+
 ## Features
 
 - **38 developer tools** in one place with quick search
