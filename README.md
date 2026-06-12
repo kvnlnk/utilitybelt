@@ -125,7 +125,6 @@ utilitybelt/
 │   │   ├── tools/              # 47 tool pages
 │   │   ├── blog/               # Blog pages
 │   │   ├── cheatsheets/        # 6 cheatsheets
-│   │   └── pricing/            # Pricing page
 │   ├── components/
 │   │   ├── ui/                 # shadcn/ui primitives
 │   │   ├── navbar.tsx          # Sticky nav with mobile drawer
