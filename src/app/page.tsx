@@ -24,6 +24,7 @@ import {
   Terminal,
   Eye,
   ScrollText,
+  Database,
 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { SearchBar } from "@/components/search-bar";
@@ -105,6 +106,7 @@ const categories: ToolCategory[] = [
     icon: ScrollText,
     tools: [
       { name: "Log Viewer", href: "/tools/log-viewer", description: "Parse, filter & inspect JSON log entries", icon: ScrollText },
+      { name: "CRUD Generator", href: "/tools/crud-generator", description: "Generate SQL CRUD from table definitions", icon: Database },
     ],
   },
 ];
@@ -215,6 +217,27 @@ export default function Home() {
           >
             <FileText className="h-4 w-4" />
             Markdown
+          </Link>
+          <Link
+            href="/cheatsheets/sql"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-muted hover:bg-muted/80 text-sm font-medium transition-colors"
+          >
+            <Database className="h-4 w-4" />
+            SQL
+          </Link>
+          <Link
+            href="/cheatsheets/typescript"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-muted hover:bg-muted/80 text-sm font-medium transition-colors"
+          >
+            <FileCode className="h-4 w-4" />
+            TypeScript
+          </Link>
+          <Link
+            href="/cheatsheets/react"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-muted hover:bg-muted/80 text-sm font-medium transition-colors"
+          >
+            <FileCode className="h-4 w-4" />
+            React
           </Link>
         </div>
       </section>

@@ -1,6 +1,6 @@
 # DevTools Hub
 
-A collection of **38 developer tools** for formatting, encoding, converting, debugging, and more. Built with Next.js and shadcn/ui.
+A collection of **39 developer tools** and **6 cheatsheets** for formatting, encoding, converting, debugging, and more. Built with Next.js and shadcn/ui.
 
 **Live:** https://devtools-hub-gules.vercel.app
 

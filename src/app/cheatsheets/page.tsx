@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { GitBranch, Container, FileText } from "lucide-react";
+import { GitBranch, Container, FileText, Database, FileType, Atom } from "lucide-react";
 
 interface Cheatsheet {
   name: string;
@@ -29,6 +29,24 @@ const cheatsheets: Cheatsheet[] = [
     href: "/cheatsheets/markdown",
     description: "Markdown syntax reference — headings, lists, code blocks, tables, links, and formatting.",
     icon: FileText,
+  },
+  {
+    name: "SQL",
+    href: "/cheatsheets/sql",
+    description: "SQL queries, joins, aggregations, CRUD operations, window functions, and PostgreSQL-specific features.",
+    icon: Database,
+  },
+  {
+    name: "TypeScript",
+    href: "/cheatsheets/typescript",
+    description: "Types, interfaces, generics, utility types, type guards, mapped types, and tsconfig options.",
+    icon: FileType,
+  },
+  {
+    name: "React & Next.js",
+    href: "/cheatsheets/react",
+    description: "Components, hooks, App Router patterns, server/client components, data fetching, and React 19 features.",
+    icon: Atom,
   },
 ];
 
