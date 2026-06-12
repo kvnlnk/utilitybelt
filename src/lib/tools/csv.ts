@@ -11,7 +11,8 @@ import { Result, ok, err } from './types';
  */
 export function csvToJson(input: string, delimiter: string = ','): Result<unknown[]> {
   try {
-    const lines = input.trim().split('\n');
+    // Parse lines respecting quoted fields that may span multiple lines
+    const lines = splitCsvLines(input);
     if (lines.length < 2) {
       return err('CSV must have at least a header row and one data row');
     }
@@ -106,6 +107,37 @@ export function jsonToCsv(input: string, delimiter: string = ','): Result<string
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
+
+/**
+ * Split CSV text into lines, preserving newlines inside quoted fields.
+ */
+function splitCsvLines(input: string): string[] {
+  const lines: string[] = [];
+  let current = '';
+  let inQuotes = false;
+
+  for (let i = 0; i < input.length; i++) {
+    const ch = input[i];
+    if (ch === '"') {
+      inQuotes = !inQuotes;
+      current += ch;
+    } else if (ch === '\n' && !inQuotes) {
+      // Only split on non-quoted newlines
+      if (current.trim()) {
+        lines.push(current.trim());
+      }
+      current = '';
+    } else {
+      current += ch;
+    }
+  }
+  // Don't trim the last line — it might be quoted content that was on a newline
+  if (current.trim()) {
+    lines.push(current.trim());
+  }
+
+  return lines;
+}
 
 /** Parse a single CSV line respecting quoted fields */
 function parseCsvLine(line: string, delimiter: string): string[] {
