@@ -2,7 +2,7 @@
 
 A collection of **47 developer tools** and **6 cheatsheets** for formatting, encoding, converting, debugging, and more.
 
-**Live:** https://utilitybelt.vercel.app
+**Live:** https://ubelt.vercel.app
 
 ## 🤖 Fully Vibecoded with Hermes Agent
 
