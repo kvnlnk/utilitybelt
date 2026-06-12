@@ -1,6 +1,6 @@
 # DevTools Hub
 
-A collection of **42 developer tools** and **6 cheatsheets** for formatting, encoding, converting, debugging, and more. Built with Next.js and shadcn/ui. Features **AI-powered tools** via Google Gemini or OpenAI.
+A collection of **42 developer tools** and **6 cheatsheets** for formatting, encoding, converting, debugging, and more. Built with Next.js and shadcn/ui.
 
 **Live:** https://devtools-hub-gules.vercel.app
 

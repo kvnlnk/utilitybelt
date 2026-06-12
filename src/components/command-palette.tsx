@@ -44,9 +44,6 @@ const allTools: ToolEntry[] = [
   { name: "Color Contrast Checker", href: "/tools/contrast" },
   { name: "Log Viewer", href: "/tools/log-viewer" },
   { name: "CRUD Generator", href: "/tools/crud-generator" },
-  { name: "AI Settings", href: "/tools/ai-settings" },
-  { name: "AI SQL Generator", href: "/tools/ai-sql-generator" },
-  { name: "AI Regex Builder", href: "/tools/ai-regex-builder" },
   // Pages
   { name: "Cheatsheets", href: "/cheatsheets" },
   { name: "Cheatsheets — Git", href: "/cheatsheets/git" },
