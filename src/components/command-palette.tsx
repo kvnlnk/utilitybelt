@@ -57,8 +57,6 @@ const allTools: ToolEntry[] = [
   { name: "Cheatsheets — SQL", href: "/cheatsheets/sql" },
   { name: "Cheatsheets — TypeScript", href: "/cheatsheets/typescript" },
   { name: "Cheatsheets — React & Next.js", href: "/cheatsheets/react" },
-  { name: "Blog", href: "/blog" },
-  { name: "Pricing", href: "/pricing" },
   { name: "Home", href: "/" },
 ];
 
