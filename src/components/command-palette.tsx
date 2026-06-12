@@ -44,6 +44,11 @@ const allTools: ToolEntry[] = [
   { name: "Color Contrast Checker", href: "/tools/contrast" },
   { name: "Log Viewer", href: "/tools/log-viewer" },
   { name: "CRUD Generator", href: "/tools/crud-generator" },
+  { name: "YAML ↔ JSON", href: "/tools/yaml-converter" },
+  { name: "HTML ↔ Markdown", href: "/tools/html-md-converter" },
+  { name: "JSON → TypeScript", href: "/tools/json-to-ts" },
+  { name: "Subnet Calculator", href: "/tools/subnet" },
+  { name: "Text Analyzer", href: "/tools/text-analyzer" },
   // Pages
   { name: "Cheatsheets", href: "/cheatsheets" },
   { name: "Cheatsheets — Git", href: "/cheatsheets/git" },

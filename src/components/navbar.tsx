@@ -22,7 +22,7 @@ export function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 font-semibold text-lg">
           <Wrench className="h-5 w-5" />
-          <span>DevTools Hub</span>
+          <span>UtilityBelt</span>
         </Link>
 
         {/* Desktop nav */}

@@ -25,6 +25,8 @@ import {
   Eye,
   ScrollText,
   Database,
+  Code,
+  BarChart,
 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { SearchBar } from "@/components/search-bar";
@@ -81,6 +83,7 @@ const categories: ToolCategory[] = [
       { name: "Diff", href: "/tools/diff", description: "Compare two texts side-by-side", icon: Columns },
       { name: "Case", href: "/tools/case", description: "Convert between text cases", icon: CaseSensitive },
       { name: "Lorem Ipsum", href: "/tools/lorem", description: "Generate placeholder text", icon: FileText },
+      { name: "Text Analyzer", href: "/tools/text-analyzer", description: "Word count, frequency, reading time, and more", icon: BarChart },
     ],
   },
   {
@@ -91,6 +94,9 @@ const categories: ToolCategory[] = [
       { name: "Epoch", href: "/tools/epoch", description: "Convert between epoch & human-readable dates", icon: Clock },
       { name: "Number Base", href: "/tools/number-base", description: "Convert between binary, octal, decimal, hex", icon: Sigma },
       { name: "CSV", href: "/tools/csv", description: "Parse, format & validate CSV data", icon: Table },
+      { name: "YAML ↔ JSON", href: "/tools/yaml-converter", description: "Bidirectional YAML/JSON conversion", icon: Shuffle },
+      { name: "HTML ↔ Markdown", href: "/tools/html-md-converter", description: "Bidirectional HTML/Markdown conversion", icon: Shuffle },
+      { name: "JSON → TypeScript", href: "/tools/json-to-ts", description: "Generate TypeScript interfaces from JSON", icon: Code },
       { name: "Contrast", href: "/tools/contrast", description: "Check WCAG color contrast ratios", icon: Eye },
     ],
   },
@@ -99,6 +105,7 @@ const categories: ToolCategory[] = [
     icon: Terminal,
     tools: [
       { name: "cURL Converter", href: "/tools/curl-converter", description: "Convert cURL to fetch, axios, Python, Go", icon: Terminal },
+      { name: "Subnet Calculator", href: "/tools/subnet", description: "Calculate network details from IP/CIDR", icon: Hash },
     ],
   },
   {
@@ -149,10 +156,10 @@ export default function Home() {
       {/* Hero */}
       <section className="mb-10 text-center">
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-          DevTools Hub
+          UtilityBelt
         </h1>
         <p className="mt-3 text-lg text-muted-foreground max-w-2xl mx-auto">
-          A collection of handy developer tools for formatting, encoding, converting, and more.
+          Developer tools, cheatsheets, and utilities — all in one utility belt.
         </p>
         <div className="mt-6 flex justify-center">
           <SearchBar value={searchQuery} onChange={setSearchQuery} placeholder="Search tools by name or description…" />

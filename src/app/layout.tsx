@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DevTools Hub — Developer Tools & Cheatsheets",
+  title: "UtilityBelt — Developer Tools & Cheatsheets",
   description:
     "A collection of handy developer tools: JSON formatter, Base64 encoder, Regex tester, Diff viewer, Hash generator, UUID generator, Epoch converter, and more.",
   keywords: [

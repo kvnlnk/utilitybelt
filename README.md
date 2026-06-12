@@ -1,8 +1,8 @@
-# DevTools Hub
+# UtilityBelt
 
-A collection of **42 developer tools** and **6 cheatsheets** for formatting, encoding, converting, debugging, and more. Built with Next.js and shadcn/ui.
+A collection of **47 developer tools** and **6 cheatsheets** for formatting, encoding, converting, debugging, and more.
 
-**Live:** https://devtools-hub-gules.vercel.app
+**Live:** https://utilitybelt.vercel.app
 
 ## 🤖 Fully Vibecoded with Hermes Agent
 
