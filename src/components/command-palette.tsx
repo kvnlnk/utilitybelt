@@ -40,6 +40,9 @@ const allTools: ToolEntry[] = [
   { name: "Regex Explain", href: "/tools/regex-explain" },
   { name: "URL Parse", href: "/tools/url-parse" },
   { name: "Mermaid Playground", href: "/tools/mermaid" },
+  { name: "cURL Converter", href: "/tools/curl-converter" },
+  { name: "Color Contrast Checker", href: "/tools/contrast" },
+  { name: "Log Viewer", href: "/tools/log-viewer" },
   // Pages
   { name: "Cheatsheets", href: "/cheatsheets" },
   { name: "Blog", href: "/blog" },

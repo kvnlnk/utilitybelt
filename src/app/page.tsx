@@ -21,6 +21,9 @@ import {
   Sigma,
   Table,
   CaseSensitive,
+  Terminal,
+  Eye,
+  ScrollText,
 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { SearchBar } from "@/components/search-bar";
@@ -87,6 +90,21 @@ const categories: ToolCategory[] = [
       { name: "Epoch", href: "/tools/epoch", description: "Convert between epoch & human-readable dates", icon: Clock },
       { name: "Number Base", href: "/tools/number-base", description: "Convert between binary, octal, decimal, hex", icon: Sigma },
       { name: "CSV", href: "/tools/csv", description: "Parse, format & validate CSV data", icon: Table },
+      { name: "Contrast", href: "/tools/contrast", description: "Check WCAG color contrast ratios", icon: Eye },
+    ],
+  },
+  {
+    name: "Network",
+    icon: Terminal,
+    tools: [
+      { name: "cURL Converter", href: "/tools/curl-converter", description: "Convert cURL to fetch, axios, Python, Go", icon: Terminal },
+    ],
+  },
+  {
+    name: "Debug",
+    icon: ScrollText,
+    tools: [
+      { name: "Log Viewer", href: "/tools/log-viewer", description: "Parse, filter & inspect JSON log entries", icon: ScrollText },
     ],
   },
 ];
