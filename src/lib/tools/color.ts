@@ -100,6 +100,11 @@ function parseRgb(input: string): RgbColor | null {
 }
 
 function parseHsl(input: string): HslColor | null {
+  // If input is hsla(...), strip the optional alpha channel before parsing
+  // hsla(240,100%,50%,0.5) → hsl(240,100%,50%)
+  if (/^hsla/i.test(input)) {
+    input = input.replace(/,\s*[\d.]+%?\s*\)\s*$/i, ')');
+  }
   const m = input.match(/hsla?\s*\(\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)%?\s*,\s*(\d+(?:\.\d+)?)%?\s*\)/);
   if (!m) return null;
   return {
