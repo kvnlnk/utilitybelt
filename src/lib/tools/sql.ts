@@ -54,7 +54,7 @@ export function formatSql(input: string): Result<string> {
 
     // Indent: clauses after the first get indented
     const resultLines: string[] = [];
-    let depth = 0;
+    let seenFirstClause = false;
 
     for (const rawLine of lines) {
       const line = rawLine.trim();
@@ -64,13 +64,18 @@ export function formatSql(input: string): Result<string> {
       const isMainClause = CLAUSE_KEYWORDS.some((k) => upper.startsWith(k));
       const isClosingClause =
         upper.startsWith('ON') || upper.startsWith('LIMIT') || upper.startsWith('OFFSET');
+      let depth: number;
 
-      if (isMainClause && !isClosingClause) {
-        // Main clause — back to base indent if we were indented
+      if (!seenFirstClause && isMainClause) {
+        // First main clause — base indent
+        seenFirstClause = true;
+        depth = 0;
+      } else if (isMainClause && !isClosingClause) {
         depth = 1;
       } else if (isMainClause && isClosingClause) {
-        // Sub-clause like ON, LIMIT
         depth = 2;
+      } else {
+        depth = seenFirstClause ? 1 : 0;
       }
 
       resultLines.push('  '.repeat(depth) + line);
