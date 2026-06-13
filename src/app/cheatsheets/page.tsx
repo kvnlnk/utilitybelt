@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { GitBranch, Container, FileText, Database, FileType, Atom } from "lucide-react";
+import { GitBranch, Container, FileText, Database, FileType, Atom, Boxes } from "lucide-react";
 
 interface Cheatsheet {
   name: string;
@@ -47,6 +47,12 @@ const cheatsheets: Cheatsheet[] = [
     href: "/cheatsheets/react",
     description: "Components, hooks, App Router patterns, server/client components, data fetching, and React 19 features.",
     icon: Atom,
+  },
+  {
+    name: "Kubernetes",
+    href: "/cheatsheets/kubernetes",
+    description: "Essential kubectl commands — pods, deployments, services, namespaces, config, debugging, and RBAC.",
+    icon: Boxes,
   },
 ];
 
