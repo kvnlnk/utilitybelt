@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
         <p>&copy; {new Date().getFullYear()} UtilityBelt — by{" "}
           <a
-            href="https://github.com/kvnlnk"
+            href="https://kevinlingk.com"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-foreground transition-colors underline underline-offset-2"
